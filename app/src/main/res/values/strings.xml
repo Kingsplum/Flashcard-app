@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">E-Flashcards</string>
+    <string name="alphabets">Alphabets</string>
+    <string name="numbers">Numbers</string>
+    <string name="colors">Colors</string>
+    <string name="animals">Animals</string>
+</resources>

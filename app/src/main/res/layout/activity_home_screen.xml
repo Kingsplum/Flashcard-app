@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffc947"
+    tools:context=".HomeScreen">
+
+
+
+
+    <RelativeLayout
+        android:background="#297aff"
+        android:id="@+id/header"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_icon"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/logo"
+            android:fontFamily="@font/poppins_bold"
+            android:text="E-Flashcards"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:typeface="sans" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:paddingTop="40dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/component_container">
+
+            <RelativeLayout
+                android:id="@+id/card_let_container"
+                android:layout_width="140dp"
+                android:layout_height="200dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="20dp"
+                android:background="@drawable/card_bg_let">
+
+                <ImageView
+                    android:id="@+id/card_let_a"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/ic_a"/>
+
+                <ImageView
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/card_let_b"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/ic_b"/>
+                <ImageView
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/card_let_a"
+                    android:id="@+id/card_let_c"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/ic_c"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="Alphabets"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    android:typeface="serif" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_alignParentRight="true"
+                android:id="@+id/card_num_container"
+                android:layout_width="140dp"
+                android:layout_height="200dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="20dp"
+                android:background="@drawable/card_bg_num">
+
+                <ImageView
+                    android:id="@+id/card_num_one"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/ic_one"/>
+
+                <ImageView
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/card_num_two"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/ic_two"/>
+                <ImageView
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/card_num_one"
+                    android:id="@+id/card_num_three"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/ic_three"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="Numbers"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    android:typeface="serif" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/card_let_container"
+                android:id="@+id/card_col_container"
+                android:layout_width="140dp"
+                android:layout_height="200dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="20dp"
+                android:background="@drawable/card_bg_col">
+
+                <ImageView
+                    android:id="@+id/card_col_red"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/ic_red"/>
+
+                <ImageView
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/card_col_blue"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/ic_blue"/>
+                <ImageView
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/card_col_red"
+                    android:id="@+id/card_let_three"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/ic_purple"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="Colors"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    android:typeface="serif" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_below="@+id/card_num_container"
+                android:layout_marginTop="20dp"
+                android:layout_alignParentRight="true"
+                android:id="@+id/card_anim_container"
+                android:layout_width="140dp"
+                android:layout_height="200dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="20dp"
+                android:background="@drawable/card_bg_anim">
+
+                <ImageView
+                    android:id="@+id/card_anim_dog"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/ic_dog"/>
+
+                <ImageView
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/card_anim_elephant"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/ic_elephant"/>
+
+                <ImageView
+                    android:id="@+id/card_anim_giraffe"
+                    android:layout_width="100dp"
+                    android:layout_height="80dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="-32dp"
+                    android:layout_marginTop="50dp"
+                    android:src="@drawable/ic_giraffe" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="Animals"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    android:typeface="serif" />
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/exit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/exit_bg"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Exit"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
